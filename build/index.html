@@ -6,11 +6,15 @@
     <title>ethiopis restaurant</title>
     <link rel="icon" href="/favicon.png">
     <link rel="stylesheet" href="../src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Beau+Rivage&display=swap" rel="stylesheet">
+    
 </head>
-<body class="bg-white ">
+<body class="bg-white dark:text-white dark:bg-gray-950">
 
     <!-- header -->
-    <header class=" sticky  top-0.5 bg-gray-200 flex justify-center align-center rounded-4xl mt-3 mx-6 mb-7 h-10 w-305 gap-150 text-">
+    <header class=" sticky  top-0.5 bg-gray-200 flex justify-center align-center rounded-4xl mt-3 mx-6 mb-7 h-10 w-305 gap-150 dark:bg-gray-700 ">
 
         <!-- logo -->
         <div >
@@ -23,16 +27,16 @@
         <!-- navigation -->
         <nav class="flex" >
             <ul class="flex font-bold  space-x-20 items-center">
-                <li class="border-y-2 border-gray-200 hover:border-cyan-500 duration-900 ">
+                <li class="border-y-2 border-gray-200 hover:border-cyan-500 dark:border-gray-700 duration-900 ">
                     <a href="#home">Home</a>
                 </li>
-                <li class="border-y-2 border-gray-200 hover:border-cyan-500 duration-900 ">
+                <li class="border-y-2 border-gray-200 hover:border-cyan-500 duration-900 dark:border-gray-700 ">
                     <a href="#menu">Menu</a>
                 </li>
-                <li class="border-y-2 border-gray-200 hover:border-cyan-500 duration-900 ">
+                <li class="border-y-2 dark:border-gray-700 border-gray-200 hover:border-cyan-500 duration-900 ">
                     <a href="#story">Our Story</a>
                 </li>
-                <li class="border-y-2 border-gray-200 hover:border-cyan-500 duration-900 ">
+                <li class="border-y-2 border-gray-200 hover:border-cyan-500 duration-900 dark:border-gray-700">
                     <a href="#feadbackform">Feedback Form </a>
                 </li>
             </ul>
@@ -46,7 +50,7 @@
     
     <section id="home" class="w-305 h-screen bg-cover bg-center flex flex-col items-center justify-center text-center mx-6 rounded-4xl" style="background-image: url('./assets/hero1.jpg')">
     
-        <h1 class="text-white text-8xl font-bold mb-7 drop-shadow-lg">Ethiopis Restaurant</h1>
+        <h1 class="text-white text-8xl font-bold mb-7 drop-shadow-lg font-beau">Ethiopis Restaurant</h1>
         
         <button class="bg-white text-black rounded-xl px-4 py-1 hover:bg-transparent border hover:border-black border-transparent hover:text-white animate-bounce transition cursor-pointer">
 
@@ -68,6 +72,31 @@
         </div>
     
     </section>
+    <!-- story section -->
+     <section id="story" class="mt-3 mx-6 mb-7 " >
+        <h1 class=" text-black text-center text-5xl dark:text-white">Our Story</h1>
+        <div id="stor" class="grid grid-rows-1 grid-cols-2 items-center gap-35 rounded-4xl">
+            <p class="text-black font-serif dark:text-white">
+                In 2021, two passionate Ethiopian chefs turned friendship into a mission.
+                <br>
+                Their love for Ethiopia’s food, culture, and history ran deep.
+                <br>
+                They believed the world needed to taste authentic Ethiopian flavors.
+                <br>
+                Starting with Africa, they shared injera, spices, and tradition across borders.
+                <br>
+                <br>
+                Their journey carried them beyond spreading Ethiopian food into Europe.
+                <br>
+                Every plate became a story of heritage, pride, and connection.
+                <br>
+                Their restaurant is more than food it’s Ethiopia on the global stage.
+                <br>
+                And their vision grows, one country, one table, one taste at a time.
+            </p>
+            <img src="./assets/founders.jpg" alt="Our Story" class="h-120 w-160 rounded-4xl mt-10">
+        </div>
+     </section>
 
 
 
