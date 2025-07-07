@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ethiopis restaurant</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Beau+Rivage&display=swap" rel="stylesheet">
+    
+</head>
+<body class="bg-white dark:text-white dark:bg-gray-950">
+
+    <!-- header -->
+    <header class=" sticky  top-0.5 bg-gray-200 flex justify-center align-center rounded-4xl mt-3 mx-6 mb-7 h-10 w-305 gap-150 dark:bg-gray-700 ">
+
+        <!-- logo -->
+        <div >
+            <a href="#home">
+                <img src="./build/assets/logo.png" alt="Ethiopis Restaurant Logo" class=" animate-pulse h-8 w-8 rounded-full pt-2">
+            </a>
+            
+
+        </div>
+        <!-- navigation -->
+        <nav class="flex" >
+            <ul class="flex font-bold  space-x-20 items-center">
+                <li class="border-y-2 border-gray-200 hover:border-cyan-500 dark:border-gray-700 duration-900 ">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="border-y-2 border-gray-200 hover:border-cyan-500 duration-900 dark:border-gray-700 ">
+                    <a href="#menu">Menu</a>
+                </li>
+                <li class="border-y-2 dark:border-gray-700 border-gray-200 hover:border-cyan-500 duration-900 ">
+                    <a href="#story">Our Story</a>
+                </li>
+                <li class="border-y-2 border-gray-200 hover:border-cyan-500 duration-900 dark:border-gray-700">
+                    <a href="#feadbackform">Feedback Form </a>
+                </li>
+            </ul>
+            <!-- light mode -->
+            <div class="flex space-x-1.5">
+                &nbsp; &nbsp; &nbsp;
+                <img src="./build/assets/lightbulb.png" alt="light mode" class="dark:hover:scheme-only-light space-x-1.5 h-8 w-8 pt-2 cursor-pointer">
+            </div>
+        </nav>
+    </header>
+    <!-- hero section -->
+    
+    <section id="home" class="w-305 h-screen bg-cover bg-center flex flex-col items-center justify-center text-center mx-6 rounded-4xl" style="background-image: url('./build/assets/hero1.jpg')">
+    
+        <h1 class="text-white text-8xl font-bold mb-7 drop-shadow-lg ">Ethiopis Restaurant</h1>
+        
+        <button class="bg-white text-black rounded-xl px-4 py-1 hover:bg-transparent border hover:border-black border-transparent hover:text-white animate-bounce transition cursor-pointer">
+
+          <a href="#menu">Explore Our Menu</a>
+        </button>
+    
+        <!-- Arrow Container -->
+        <div class="flex items-center justify-between w-full px-10 mt-5">
+            
+            <img src="./build/assets/left-arrow.png" alt="Left Arrow" id="left-arrow" class="h-8 w-8 cursor-pointer hover:scale-110 transition">
+            
+            <img src="./build/assets/right-arrow.png" alt="Right Arrow" id="right-arrow" class="h-8 w-8 cursor-pointer hover:scale-110 transition">
+    
+        </div>
+        <div id="scrolls" class="grid gap-1 grid-cols-3 grid-rows-1 absolute top-150 ">
+            <button class="h-2 w-2 rounded-full  m-10 border-1 bg-transparent cursor-pointer"></button>
+            <button class="h-2 w-2 rounded-full m-10  bg-white cursor-pointer"></button>
+            <button class="h-2 w-2 rounded-full m-10 border-1 bg-transparent cursor-pointer"></button>
+        </div>
+    
+    </section>
+    <!-- story section -->
+     <section id="story" class="mt-3 mx-6 mb-7 " >
+        <h1 class=" text-black text-center text-5xl dark:text-white">Our Story</h1>
+        <div id="stor" class="grid grid-rows-1 grid-cols-2 items-center gap-35 rounded-4xl">
+            <p class="text-black font-serif dark:text-white">
+                In 2021, two passionate Ethiopian chefs turned friendship into a mission.
+                <br>
+                Their love for Ethiopia’s food, culture, and history ran deep.
+                <br>
+                They believed the world needed to taste authentic Ethiopian flavors.
+                <br>
+                Starting with Africa, they shared injera, spices, and tradition across borders.
+                <br>
+                <br>
+                Their journey carried them beyond spreading Ethiopian food into Europe.
+                <br>
+                Every plate became a story of heritage, pride, and connection.
+                <br>
+                Their restaurant is more than food it’s Ethiopia on the global stage.
+                <br>
+                And their vision grows, one country, one table, one taste at a time.
+            </p>
+            <img src="./build/assets/founders.jpg" alt="Our Story" class="h-100 w-160 rounded-4xl mt-10">
+        </div>
+     </section>
+
+     <!-- menu section -->
+     <section id="meu" class="mt-3 ml-15 mr-10 mb-7">
+        <h1 class="text-center text-black font-medium text-5xl p-10 dark:text-white">Our Dish List</h1>
+        <div class="grid grid-row-2 grid-cols-4 gap-5 ">
+            <div class="h-80 w-70 flex flex-col  rounded-2xl dark:hover:scale-105 dark:shadow-gray-800 hover:scale-105 hover:shadow hover:shadow-gray-400 cursor-pointer   transition duration-500">
+                <img src="./build/assets/beyaynet.jpg" alt="beyaynet" class="h-40 w-full object-cover rounded-t-2xl">
+                <div class="dark:text-white dark:bg-gray-900 text-black text-center font-bold  flex-1 flex  flex-col  pb-2  dark:rounded-b-xl ">
+                    <h1 class="pb-2 text-2xl">Beyaynet</h1>
+                    <div class="text-sm">
+                        Ethiopia’s vibrant mix of flavors on injera.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="h-80 w-70 flex flex-col  rounded-2xl dark:hover:scale-105 dark:shadow-gray-800 hover:scale-105 hover:shadow hover:shadow-gray-400 cursor-pointer   transition duration-500">
+                <img src="./build/assets/doro wot.jpg" alt="doro wot" class="h-40 w-full object-cover rounded-t-2xl">
+                <div class="dark:text-white dark:bg-gray-900 text-black text-center font-bold  flex-1 flex  flex-col  pb-2  dark:rounded-b-xl ">
+                    <h1 class="pb-2 text-2xl">Doro wot</h1>
+                    <div class="text-sm">
+                        slow-cooked chicken stew bursting with rich berbere flavor.
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-80 w-70 flex flex-col  rounded-2xl dark:hover:scale-105 dark:shadow-gray-800 hover:scale-105 hover:shadow hover:shadow-gray-400 cursor-pointer   transition duration-500">
+                <img src="./build/assets/kitfo.webp" alt="kitfo" class="h-40 w-full object-cover rounded-t-2xl">
+                <div class="dark:text-white dark:bg-gray-900 text-black text-center font-bold  flex-1 flex  flex-col  pb-2  dark:rounded-b-xl ">
+                    <h1 class="pb-2 text-2xl">Kitfo</h1>
+                    <div class="text-sm">
+                        spiced raw beef with  ayib and injera.
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-80 w-70 flex flex-col  rounded-2xl dark:hover:scale-105 dark:shadow-gray-800 hover:scale-105 hover:shadow hover:shadow-gray-400 cursor-pointer   transition duration-500">
+                <img src="./build/assets/tere siga.jpg" alt="tere siga" class="h-40 w-full object-cover rounded-t-2xl">
+                <div class="dark:text-white dark:bg-gray-900 text-black text-center font-bold  flex-1 flex  flex-col  pb-2  dark:rounded-b-xl ">
+                    <h1 class="pb-2 text-2xl">Tere siga</h1>
+                    <div class="text-sm">
+                        Raw beef slices served with mitmita and mustard.
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-80 w-70 flex flex-col  rounded-2xl dark:hover:scale-105 dark:shadow-gray-800 hover:scale-105 hover:shadow hover:shadow-gray-400 cursor-pointer   transition duration-500">
+                <img src="./build/assets/chechebsa.jpeg" alt="chechebsa" class="h-40 w-full object-cover rounded-t-2xl">
+                <div class="dark:text-white dark:bg-gray-900 text-black text-center font-bold  flex-1 flex  flex-col  pb-2  dark:rounded-b-xl ">
+                    <h1 class="pb-2 text-2xl">Chechebsa</h1>
+                    <div class="text-sm">
+                        Fried flatbread pieces tossed in spiced niter kibbeh.
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-80 w-70 flex flex-col  rounded-2xl dark:hover:scale-105 dark:shadow-gray-800 hover:scale-105 hover:shadow hover:shadow-gray-400 cursor-pointer   transition duration-500">
+                <img src="./build/assets/tibis.webp" alt="tibis" class="h-40 w-full object-cover rounded-t-2xl">
+                <div class="dark:text-white dark:bg-gray-900 text-black text-center font-bold  flex-1 flex  flex-col  pb-2  dark:rounded-b-xl ">
+                    <h1 class="pb-2 text-2xl">Tibis</h1>
+                    <div class="text-sm">
+                        Sautéed beef or lamb cubes with peppers and spices
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-80 w-70 flex flex-col  rounded-2xl dark:hover:scale-105 dark:shadow-gray-800 hover:scale-105 hover:shadow hover:shadow-gray-400 cursor-pointer   transition duration-500">
+                <img src="./build/assets/enkulal firfir.webp" alt="enkulal firfir" class="h-40 w-full object-cover rounded-t-2xl">
+                <div class="dark:text-white dark:bg-gray-900 text-black text-center font-bold  flex-1 flex  flex-col  pb-2  dark:rounded-b-xl ">
+                    <h1 class="pb-2 text-2xl">Enkulal Firfir</h1>
+                    <div class="text-sm">
+                        scrambled eggs mixed with torn injera, onions, and spices.
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-80 w-70 flex flex-col  rounded-2xl dark:hover:scale-105 dark:shadow-gray-800 hover:scale-105 hover:shadow hover:shadow-gray-400 cursor-pointer   transition duration-500">
+                <img src="./build/assets/shiro.webp" alt="shiro" class="h-40 w-full object-cover rounded-t-2xl">
+                <div class="dark:text-white dark:bg-gray-900 text-black text-center font-bold  flex-1 flex  flex-col  pb-2  dark:rounded-b-xl ">
+                    <h1 class="pb-2 text-2xl">Shiro</h1>
+                    <div class="text-sm">
+                        Smooth chickpea stew, rich and spicy, served with injera.
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+     </section>
+
+
+
+    
+
+
+   
+</body>
+</html>
